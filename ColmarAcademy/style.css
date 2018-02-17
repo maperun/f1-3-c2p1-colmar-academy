@@ -1,0 +1,353 @@
+body {
+	font-family: helvetica, sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+/*Nav Bar*/
+
+nav {
+	display: flex;
+	justify-content: space-between;
+	height: 64px;
+}	
+
+.company {
+	display: flex;
+	align-items: center;
+	padding-left: 24px;
+}
+
+.company span {
+	color: gray;
+}
+
+nav ul {
+	list-style-type: none;
+	display: flex;
+	align-items: center;
+	padding-right: 24px;
+}
+
+nav li {
+	padding: 16px;
+}
+
+nav a {
+	text-decoration: none;
+	color: black;
+}
+
+nav a:hover {
+	text-decoration: underline;
+	color: dimgray;
+}
+
+@media only screen and (max-width: 700px) {
+	nav ul, nav p {
+		display: none;
+	}
+}
+
+/*Main Banner*/
+
+.main-banner img {
+	width: 60%;
+	margin: 32px 24px;
+}
+
+.main-banner {
+	display: flex;
+	align-items: center;
+	background-color: lightgray;
+}
+
+.banner-content {
+	width: 20%;
+	text-align: center;
+	padding: 24px;
+}
+
+.banner-content button {
+	width: 100%;
+	padding: 8px 0;
+	background-color: dimgray;
+	transition: background-color 1s;
+}
+
+.banner-content button:hover {
+	background-color: gray;
+}
+
+.banner-content button a {
+	text-decoration: none;
+	color: lightgray;
+}
+
+@media only screen and (max-width: 700px) {
+	.main-banner {
+		flex-direction: column;
+	}
+
+	.main-banner img {
+		width: 100%;
+		margin: 0;
+	}
+
+	.banner-content {
+		width: 100%;
+	}
+
+	.banner-content button {
+		width: 50%;
+	}
+}
+
+/*Info Section*/
+
+#info-container {
+	display: flex;
+	padding: 32px 0 32px 24px;
+}
+
+.info-left-column {
+	width: 60%;
+}
+
+.info-left-column img {
+	width: 100%;
+}
+
+.info-right-column {
+	width: 40%;
+	padding-left: 24px;
+}
+
+.info-right-column img {
+	width: 35%;
+	height: auto;
+	margin: 32px 24px;
+}
+
+.info-content {
+	width: 65%;
+}
+
+.information {
+	display: flex;
+	align-items: center;
+	border: 1px solid lightgray;
+}
+
+.info-content a {
+	color: black;
+	text-decoration-color: gray;
+}
+
+.info-content a:hover {
+	color: gray;
+}
+
+@media only screen and (max-width: 700px) {
+	#info-container {
+		display: block;
+		margin: 0;
+		padding: 0;
+	}
+
+	.info-left-column {
+		display: none;
+	}
+
+	.info-right-column {
+		width: 100%;
+	}
+
+	.information {
+		flex-direction: column;
+		align-items: center;
+		border: none;
+		width: 100%;
+	}
+
+	.information img, .info-content {
+		width: 100%;
+		height: auto;
+	}
+}
+
+/*Courses Section*/
+
+#courses-container {
+	margin: auto;
+	background-color: lightgray;
+}
+
+#courses-container h1 {
+	margin: auto;
+	text-align: center;
+	padding-top: 32px;
+}
+
+.courses {
+	margin: auto;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	padding: 16px 72px 32px 72px;
+	overflow: hidden;
+}
+
+.course {
+	background-color: white;
+	width: 30%;
+	margin: 16px;
+}
+
+.course img {
+	width: 100%;
+}
+
+.course h2, .course span, .course p {
+	padding: 0 16px;
+}
+
+@media only screen and (max-width: 700px) {
+	#courses-container {
+		margin: auto;
+	}
+
+	.courses {
+		display: block;
+		padding: 0;
+	}
+
+	.course {
+		width: 100%;
+		height: auto;
+		padding: 16px;
+	}
+
+	.course img, .course span, .course p {
+		display: none;
+	}
+}
+
+/*Thesis Section*/
+
+#thesis-container {
+	margin: auto;	
+}
+
+.thesis {
+	margin: auto;
+	display: flex;
+}
+
+#thesis-container h1 {
+	text-align: center;
+	padding: 32px 0;
+}
+
+.thesis-left-column {
+	width: 60%;
+	padding: 0 24px 24px 24px;
+}
+
+.thesis-left-column video {
+	width: 100%;
+}
+
+.thesis-right-column {
+	width: 40%;
+}
+
+.thesis-info-content {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 1px solid lightgray;
+}
+
+.thesis-info-content img {
+	width: 35%;
+	height: auto;
+	padding: 16px;
+}
+
+@media only screen and (max-width: 700px) {
+	.thesis {
+		display: block;
+	}
+
+	.thesis-left-column h2, .thesis-left-column p {
+		display: none;
+	}
+
+	.thesis-right-column {
+		display: none;
+	}
+
+	.thesis-left-column {
+		width: 100%;
+	}
+}
+
+/*Footer*/
+
+footer {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border-top: 1px solid lightgray;
+	padding: 0 24px 24px 24px;
+}
+
+footer p, footer a {
+	font-size: small;
+}
+
+footer ul {
+	list-style-type: none;
+}
+
+footer li {
+	display: inline;
+}
+
+footer a {
+	color: black;
+	text-decoration: none;
+	padding: 2px;
+}
+
+footer a:hover {
+	text-decoration: underline;
+	color: dimgray;
+}
+
+@media only screen and (max-width: 700px) {
+	footer ul {
+		display: none;
+	}
+
+	footer p {
+		padding-top: 24px;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
